@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-card">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label id="labelInput">Email or Phone</label>
+        <div class="input-row">
+          <select id="countryCode" style="display: none;">
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+91">🇮🇳 +91</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+61">🇦🇺 +61</option>
+            <option value="+81">🇯🇵 +81</option>
+          </select>
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Enter email or phone"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-group" id="passwordGroup" style="display: none;">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password" />
+      </div>
+
+      <button type="submit" id="loginBtn" style="display: none;">Login</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
